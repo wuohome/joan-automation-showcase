@@ -1,0 +1,108 @@
+{
+  "last_sync": "2026-05-11 20:27",
+  "summary": {
+    "systems_total": 18,
+    "all_workers_online": true,
+    "n8n_workflows_running": true,
+    "external_pages": 17
+  },
+  "workers": [
+    {
+      "name": "CC",
+      "role": "對話派工",
+      "model": "Opus",
+      "uptime_days": 41,
+      "last_heartbeat": "8 秒前"
+    },
+    {
+      "name": "Doctor",
+      "role": "自動修",
+      "model": "Opus",
+      "uptime_days": 41,
+      "last_heartbeat": "5 秒前"
+    },
+    {
+      "name": "SEC",
+      "role": "訊息匯總",
+      "model": "Sonnet",
+      "uptime_days": 41,
+      "last_heartbeat": "14 秒前"
+    },
+    {
+      "name": "OPS",
+      "role": "系統 alert",
+      "model": "cron",
+      "uptime_days": 41,
+      "last_heartbeat": "30 分前"
+    },
+    {
+      "name": "LINE 採購",
+      "role": "採購單建立",
+      "model": "Sonnet",
+      "uptime_days": 41,
+      "last_heartbeat": "6 秒前"
+    }
+  ],
+  "hook_stats": {
+    "registered": 13,
+    "active_7d": 8,
+    "recent_hits": [
+      {
+        "name": "pitfall-reflex",
+        "label": "踩坑前查表",
+        "count_7d": 122,
+        "level": "high"
+      },
+      {
+        "name": "monkey-detector",
+        "label": "反 AI 退化",
+        "count_7d": 5,
+        "level": "active"
+      },
+      {
+        "name": "dispatch-vault-explorer",
+        "label": "強制派 sub-agent",
+        "count_7d": 12,
+        "level": "active"
+      },
+      {
+        "name": "vault-ssh-block",
+        "label": "攔 SSH 進 vault",
+        "count_7d": 3,
+        "level": "medium"
+      },
+      {
+        "name": "credential-detector",
+        "label": "偵測貼入 secret",
+        "count_7d": 0,
+        "level": "standby"
+      }
+    ]
+  },
+  "recent_events": [
+    {
+      "ago": "12 分鐘前",
+      "source": "採購",
+      "level": "success",
+      "msg": "新採購單建立成功"
+    },
+    {
+      "ago": "38 分鐘前",
+      "source": "招募",
+      "level": "success",
+      "msg": "104 新應徵自動分類 · 1 件排面試 / 2 件待 Joan"
+    },
+    {
+      "ago": "2 小時前",
+      "source": "Doctor",
+      "level": "warn",
+      "msg": "n8n workflow 一條卡住 → 自動重啟成功"
+    },
+    {
+      "ago": "5 小時前",
+      "source": "業績",
+      "level": "success",
+      "msg": "每日業績表自動更新 GitHub Pages dashboard"
+    }
+  ]
+}
