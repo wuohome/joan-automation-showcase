@@ -8,4 +8,4 @@
 
 **資料來源**：Mac Mini cron 每小時 export 脫敏 snapshot.json 推到本 repo。
 
-**規格書**：[[系統健康儀表板_IA重設計_規格書]]（vault 內）
+**規格書**：`系統健康儀表板_IA重設計_規格書.md`（vault 內部文件,不對外公開)
