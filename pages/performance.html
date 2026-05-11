@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>業績&數據 — 窩的家自動化作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="bg-gray-50">
+  <main class="detail-page">
+    <div class="breadcrumb">
+      <a href="../index.html">← 回首頁</a>
+      <span>/</span>
+      <span>業績&數據</span>
+    </div>
+
+    <header class="detail-header-section">
+      <div class="kicker accent">業績&數據</div>
+      <h1>5 個系統讓業績數字自動跑到你面前</h1>
+      <p class="lead">GSheet 到 SPA 儀表板每日自動同步、即時排行榜、兩年月度趨勢分析 — Joan 不用手動整理就知道全店狀態</p>
+    </header>
+
+    <!-- 系統卡片 1：業績表自動同步系統 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 1 / 5</div>
+          <h2>業績表自動同步系統</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">每日 17:30 自動更新</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>每日 17:30</strong> <span>自動執行</span></div>
+        <div><strong>GSheet → GitHub</strong> <span>全自動 pipeline</span></div>
+        <div><strong>0</strong> <span>人工介入</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>業績資料源頭在公司 Google Sheet → GAS 每日定時把資料鏡像到 Service Account → Python 腳本把結構化資料轉成 Markdown 格式寫進 vault → GitHub Actions 自動 push 更新 wuohome/ragic → staff-dashboard.html 前端即時呈現最新數字。整條鏈每天 17:30 自動跑完，Joan 不需要手動匯出任何東西。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://github.com/wuohome/ragic">📦 GitHub: wuohome/ragic</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 2：進案量排行榜 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 2 / 5</div>
+          <h2>進案量排行榜 SPA</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">Ragic 即時資料</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>多 tab</strong> <span>切換分析維度</span></div>
+        <div><strong>即時</strong> <span>Ragic API 拉取</span></div>
+        <div><strong>手機</strong> <span>友善操作</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>直接打 Ragic API 取開發募集和業績資料 → SPA 前端即時計算並呈現多個維度：進案量排行、業績排行、物件庫存、客戶來源分佈、業務個人分析。業務手機開頁面就看到自己今月排第幾，Joan 不用每週手動整理 Excel 報表。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://wuohome.github.io/ragic/staff-dashboard.html">🌐 對外: staff-dashboard.html</a>
+        <a href="https://github.com/wuohome/ragic">📦 GitHub: wuohome/ragic</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 3：全店業績趨勢分析 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 3 / 5</div>
+          <h2>全店業績趨勢分析</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">Obsidian 整理</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>2 年+</strong> <span>月度資料</span></div>
+        <div><strong>圖表</strong> <span>視覺化</span></div>
+        <div><strong>獎金結構</strong> <span>拆解分析</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>彙整 113 年 3 月至今的月度業績、獎金結構資料 → 在 Obsidian 內用圖表整理旺季/淡季規律、獎金觸發條件、業務個人成長曲線。這份分析是 Joan 做人事決策、訂年度目標的底層依據，不是拿來展示的，是真的在用的管理工具。</p>
+      </div>
+      <div class="detail-links">
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 4：業績獎金結構分析 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 4 / 5</div>
+          <h2>業績獎金結構分析</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">Joan 主動使用</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>個人</strong> <span>獎金試算</span></div>
+        <div><strong>全店</strong> <span>結構拆解</span></div>
+        <div><strong>即時</strong> <span>模擬情境</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>輸入業績數字 → 試算工具按獎金結構公式算出每個業務本月可領多少 → 也可以模擬「如果再多一張合約」的情境。Joan 用這個工具跟業務討論目標設定，有數字根據，不是拍腦袋。全店結構分析則提供跨月比較和異常偵測。</p>
+      </div>
+      <div class="detail-links">
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 5：數位轉型簡報 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 5 / 5</div>
+          <h2>數位轉型簡報</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">對外公開</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>對外</strong> <span>展示用途</span></div>
+        <div><strong>互動式</strong> <span>網頁簡報</span></div>
+        <div><strong>完整</strong> <span>系統盤點</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>把窩的家整個數位轉型歷程整理成一份互動式網頁簡報，包含系統盤點、數據成效、流程改造前後對比。對外分享時直接傳連結，不需要 ppt 附件。也作為公司內部新人了解整體自動化架構的入門材料。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://wuohome.github.io/ragic/wuohome-digital-transformation.html">🌐 對外: wuohome-digital-transformation.html</a>
+        <a href="https://github.com/wuohome/ragic">📦 GitHub: wuohome/ragic</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+  </main>
+</body>
+</html>

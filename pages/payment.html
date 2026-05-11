@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>收款&合約 — 窩的家自動化作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="bg-gray-50">
+  <main class="detail-page">
+    <div class="breadcrumb">
+      <a href="../index.html">← 回首頁</a>
+      <span>/</span>
+      <span>收款&合約</span>
+    </div>
+
+    <header class="detail-header-section">
+      <div class="kicker accent">收款&合約</div>
+      <h1>6 個系統串起簽約、收款到對帳全流程</h1>
+      <p class="lead">手機簽名、定金收據、銀行對帳、工單報修 — 業務出門一支手機就能跑完整段收款流程</p>
+    </header>
+
+    <!-- 系統卡片 1：線上收款憑單 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 1 / 6</div>
+          <h2>線上收款憑單</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">production</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>手機</strong> <span>電子簽名</span></div>
+        <div><strong>自動</strong> <span>PDF 產生</span></div>
+        <div><strong>Ragic</strong> <span>直接回寫</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>業務在後台建好收款單 → 系統自動產生帶 token 的連結 → 用 LINE 傳給房東或租客 → 對方手機打開頁面、確認金額後手寫簽名 → 系統即時產生 PDF 收據並回寫 Ragic，業務不用帶紙本合約出門。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://wuohome.github.io/ragic/payment-receipt.html">🌐 對外: payment-receipt.html</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 2：線上斡旋金 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 2 / 6</div>
+          <h2>線上斡旋金</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">production</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>手機</strong> <span>收定金簽收</span></div>
+        <div><strong>法律</strong> <span>合規收據格式</span></div>
+        <div><strong>即時</strong> <span>回寫紀錄</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>客戶確認出斡旋金 → 業務產連結傳 LINE → 客戶手機確認金額、物件資訊並電子簽名 → 產出定金收據 PDF。整段在現場 5 分鐘內完成，不需要回公司補文件。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://wuohome.github.io/ragic/earnest.html">🌐 對外: earnest.html</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 3：銀行收款對帳機器人 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 3 / 6</div>
+          <h2>銀行收款對帳機器人</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">LINE 指令觸發</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>2</strong> <span>帳戶同時比對</span></div>
+        <div><strong>即時</strong> <span>LINE 查帳</span></div>
+        <div><strong>自動</strong> <span>入帳匹配</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>財務在 LINE 群組輸入 <code>/查帳</code> → 機器人自動登入銀行後台 → 抓近期交易明細 → 比對租售帳戶和裝潢帳戶的入帳紀錄 → 回覆哪筆款項已入帳、哪筆還未到。不用財務自己開電腦登銀行每次手動查。</p>
+      </div>
+      <div class="detail-links">
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 4：LINE 房客綁定 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 4 / 6</div>
+          <h2>LINE 房客綁定</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">production</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>LINE</strong> <span>帳號對照 Ragic</span></div>
+        <div><strong>掃碼</strong> <span>一次綁定</span></div>
+        <div><strong>自動</strong> <span>後續推播識別</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>新房客入住 → 掃 QR Code 開綁定頁面 → LINE 登入授權 → 系統自動把 LINE UID 對照到 Ragic 房客資料表。之後機器人推催繳通知、收款連結時，系統知道要推給誰，不用業務每次手動找聯絡方式。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://wuohome.github.io/ragic/tenant-bind.html">🌐 對外: tenant-bind.html</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 5：委託案管理 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 5 / 6</div>
+          <h2>委託案管理</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">Ragic 運作</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>多案型</strong> <span>統一管理</span></div>
+        <div><strong>進度</strong> <span>即時追蹤</span></div>
+        <div><strong>自動</strong> <span>節點通知</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>涵蓋洋溢綠境自建案、社子地主自建案、一般租售委託三種案型，統一在 Ragic 委託案管理表追蹤進度節點（簽委、廣告上架、帶看、斡旋、簽約、交屋）。節點推進自動通知相關業務，Joan 一眼看到全店案件在哪個階段卡住。</p>
+      </div>
+      <div class="detail-links">
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 6：報修工單系統 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 6 / 6</div>
+          <h2>報修工單系統</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">production</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>QR Code</strong> <span>掃碼報修</span></div>
+        <div><strong>自動</strong> <span>寫入 Ragic</span></div>
+        <div><strong>0</strong> <span>人工轉單</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>房間門口貼 QR Code → 房客手機掃碼 → 打開報修頁填問題描述和照片 → 直接寫進 Ragic 維修工單表 → 物業通知師傅處理。整個流程房客不用打電話、業務不用轉述，工單自動建立並追蹤進度。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://wuohome.github.io/ragic/repair.html">🌐 對外: repair.html</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+  </main>
+</body>
+</html>

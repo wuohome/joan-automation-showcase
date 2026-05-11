@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>內部協作 — 窩的家自動化作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="bg-gray-50">
+  <main class="detail-page">
+    <div class="breadcrumb">
+      <a href="../index.html">← 回首頁</a>
+      <span>/</span>
+      <span>內部協作</span>
+    </div>
+
+    <header class="detail-header-section">
+      <div class="kicker accent">內部協作</div>
+      <h1>5 個系統讓指令下達、訊息追蹤、任務管理全部自動化</h1>
+      <p class="lead">Joan LINE 說一句話 → AI 分類交辦 → Ragic 追蹤；多群組訊息 → 每小時摘要到 Telegram，什麼都不會漏</p>
+    </header>
+
+    <!-- 系統卡片 1：交辦追蹤系統 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 1 / 5</div>
+          <h2>交辦追蹤系統</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">LINE 自然語言觸發</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>自然語言</strong> <span>下指令</span></div>
+        <div><strong>AI 分類</strong> <span>自動交辦</span></div>
+        <div><strong>Ragic</strong> <span>追蹤進度</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>Joan 在 LINE 說「叫小明去跟屋主確認鑰匙」→ n8n 接到訊息 → AI 判斷這是交辦事項、負責人是小明、期限是今天 → 自動在 Ragic 管理追蹤表建一筆任務並指派給對應業務 → Joan 之後可以查「還有哪些沒完成的」，不需要自己記在腦袋或再開群組確認。</p>
+      </div>
+      <div class="detail-links">
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 2：LINE 訊息匯總 SEC Bot -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 2 / 5</div>
+          <h2>LINE 訊息匯總（SEC Bot）</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">每小時摘要</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>多群組</strong> <span>同時監聽</span></div>
+        <div><strong>每小時</strong> <span>AI 摘要</span></div>
+        <div><strong>Telegram</strong> <span>推給 Joan</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>Joan 同時在多個 LINE 業務群組 → Bot 透過 LINE OA Webhook 收所有群組訊息 → n8n 每小時彙整 → AI 把重要內容摘要成幾句話 → 推到 Joan 的 Telegram。Joan 不用每個群組一直盯，一小時看一次摘要就知道有沒有需要處理的事。</p>
+      </div>
+      <div class="detail-links">
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 3：行動辦公室 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 3 / 5</div>
+          <h2>行動辦公室</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">production</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>手機</strong> <span>優先設計</span></div>
+        <div><strong>2 模組</strong> <span>開發募集+物件</span></div>
+        <div><strong>Ragic API</strong> <span>直接寫入</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>Ragic 原生輸入介面在手機上體驗差 → 自建前端替換：outreach（開發募集記錄）和 property（租賃物件建檔）兩個模組，針對業務外出時手機操作場景重新設計表單流程 → 填完送出直接打 Ragic API 寫進資料表。業務在外面遇到有興趣的屋主當場手機記錄，回公司不用再重 key。</p>
+      </div>
+      <div class="detail-links">
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 4：ragic-system-docs 文件中心 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 4 / 5</div>
+          <h2>Ragic 系統文件中心</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">對外公開</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>操作文件</strong> <span>結構化整理</span></div>
+        <div><strong>對外</strong> <span>可直接分享</span></div>
+        <div><strong>GitHub Pages</strong> <span>自動部署</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>Ragic 系統的操作 SOP 整理成一個獨立文件站，新員工或業務忘記怎麼操作直接丟這個網址 → 搜尋或瀏覽找到對應的步驟說明。Joan 改文件推 GitHub 自動部署，不用維護 CMS，也不需要給任何人帳號權限。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://wuohome.github.io/ragic-system-docs/">🌐 對外: ragic-system-docs</a>
+        <a href="https://github.com/wuohome/ragic-system-docs">📦 GitHub: wuohome/ragic-system-docs</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 5：Trello 自動化 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 5 / 5</div>
+          <h2>Trello 自動化</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">Butler + n8n</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>Butler</strong> <span>規則自動推卡</span></div>
+        <div><strong>n8n</strong> <span>跨系統整合</span></div>
+        <div><strong>內部</strong> <span>任務管理</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>Trello Butler 規則處理看板內的自動推卡邏輯（到期自動移欄、特定 label 自動指派）→ n8n 負責跨系統：Ragic 有新待辦 → 自動在 Trello 建卡 → 完成後回寫 Ragic 狀態。把 Trello 的任務管理視覺化優勢和 Ragic 的資料結構整合在一起，不用兩邊手動同步。</p>
+      </div>
+      <div class="detail-links">
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+  </main>
+</body>
+</html>

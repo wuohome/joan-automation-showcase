@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>租賃前線 — 窩的家自動化作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="bg-gray-50">
+  <main class="detail-page">
+    <div class="breadcrumb">
+      <a href="../index.html">← 回首頁</a>
+      <span>/</span>
+      <span>租賃前線</span>
+    </div>
+
+    <header class="detail-header-section">
+      <div class="kicker accent">租賃前線</div>
+      <h1>5 個系統串起物件來源到成交地圖</h1>
+      <p class="lead">從 591 廣告投放、合資物件爬取、稅務試算到兩張地圖視覺化 — 業務出門前就知道今天要跑哪裡</p>
+    </header>
+
+    <!-- 系統卡片 1：591 資產活化機器人 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 1 / 5</div>
+          <h2>591 資產活化機器人</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">每日定時執行</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>每日</strong> <span>自動爬取</span></div>
+        <div><strong>BFF API</strong> <span>精確地址</span></div>
+        <div><strong>自動</strong> <span>回填 Ragic</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>每天定時爬 591 上符合頂加條件的合資物件 → 打 BFF API 取得精確地址（不依賴模糊描述）→ 比對實價登錄評分 → 自動寫進 Ragic 資產活化表。業務早上開 Ragic 就看到昨晚新進的潛力物件清單，不用自己盯 591。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://github.com/wuohome/591機器人">📦 GitHub: wuohome/591機器人</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 2：591 廣告管家 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 2 / 5</div>
+          <h2>591 廣告管家</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">每日 01:00 執行</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>每日 01:00</strong> <span>自動巡查</span></div>
+        <div><strong>24h</strong> <span>到期預警</span></div>
+        <div><strong>LINE</strong> <span>關鍵字查詢</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>凌晨 01:00 自動登入 591 廣告後台 → 掃描所有版位到期日、剩餘額度、精選置頂狀態 → 24 小時內到期就發 LINE 警報 → 業務也可以直接在 LINE 輸入關鍵字（如地址、物件編號）查廣告狀態，不用開電腦登入後台。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://wuohome.github.io/ragic/591-dashboard.html">🌐 對外: 591-dashboard.html</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 3：智慧找房地圖 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 3 / 5</div>
+          <h2>智慧找房地圖</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">production</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>地圖</strong> <span>視覺搜尋</span></div>
+        <div><strong>Ragic</strong> <span>即時資料</span></div>
+        <div><strong>手機</strong> <span>優先操作</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>整合多欄位物件資料，在地圖上打點顯示每個物件位置、租金、狀態 → 業務帶看時手機開地圖直接找周邊物件，不用切換系統。資料源頭接 Ragic，物件狀態更新後地圖即時反映。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://wuohome.github.io/ragic/map.html">🌐 對外: map.html</a>
+        <a href="https://github.com/wuohome/ragic">📦 GitHub: wuohome/ragic</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 4：yongce-map 永策地圖 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 4 / 5</div>
+          <h2>永策不動產地圖（委外建置）</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">窩的家建+維運</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>外部</strong> <span>客戶委託</span></div>
+        <div><strong>地圖</strong> <span>物件視覺化</span></div>
+        <div><strong>獨立</strong> <span>Repo 維運</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>永策不動產委託窩的家建置並持續維運的物件地圖工具，架構與智慧找房地圖同源，但資料源頭、樣式、業務邏輯獨立成一個 Repo。窩的家對外輸出技術服務能力的具體案例。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://wuohome.github.io/yongce-map/map.html">🌐 對外: yongce-map/map.html</a>
+        <a href="https://github.com/wuohome/yongce-map">📦 GitHub: wuohome/yongce-map</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 5：房東稅務計算機 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 5 / 5</div>
+          <h2>房東稅務計算機</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">純前端 · 2026 年版</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>純前端</strong> <span>無後端依賴</span></div>
+        <div><strong>即時</strong> <span>試算結果</span></div>
+        <div><strong>手機</strong> <span>帶看現場用</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>業務帶看時房東問「我租出去要繳多少稅？」→ 拿出手機開這頁 → 填租金、屋齡、設備費用 → 即時算出綜所稅、房屋稅、地價稅估算 → 現場給出有憑有據的數字，不是憑感覺。純前端，離線也能跑。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://wuohome.github.io/ragic/2026LandlordTax.html">🌐 對外: 2026LandlordTax.html</a>
+        <a href="https://github.com/wuohome/ragic">📦 GitHub: wuohome/ragic</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+  </main>
+</body>
+</html>
