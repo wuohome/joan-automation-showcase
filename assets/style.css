@@ -49,3 +49,22 @@ body {
 .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
 .dot-green { background: var(--success); }
 .cta-primary { background: var(--text-emphasis); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 500; }
+
+/* ============================================================
+   Business Grid Section
+   ============================================================ */
+.bg-gray-50 { background: var(--bg-gray-50); }
+.section-header { text-align: center; margin-bottom: 60px; padding-top: 80px; }
+.section-header .kicker { font-size: 11px; letter-spacing: 0.15em; color: var(--text-muted); text-transform: uppercase; margin-bottom: 12px; }
+.section-header h2 { font-size: 36px; letter-spacing: -0.02em; color: var(--text-emphasis); font-weight: 600; }
+.grid-3col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+.biz-card { background: var(--bg-white); border: 1px solid var(--border); border-radius: 12px; padding: 24px; text-decoration: none; color: inherit; transition: all 0.2s; display: block; }
+.biz-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.06); transform: translateY(-2px); }
+.biz-label { font-size: 11px; letter-spacing: 0.1em; color: var(--accent); text-transform: uppercase; font-weight: 600; margin-bottom: 10px; }
+.biz-card h3 { font-size: 17px; color: var(--text-emphasis); margin-bottom: 10px; font-weight: 600; }
+.biz-card p { font-size: 13px; color: var(--text-light); line-height: 1.55; margin-bottom: 16px; }
+.biz-meta { font-size: 11px; color: var(--text-muted); }
+.infra-callout { max-width: 800px; margin: 60px auto 80px auto; padding: 32px 48px; background: var(--bg-white); border: 1px solid var(--border); border-radius: 12px; text-align: center; }
+.infra-callout .accent { color: var(--accent); }
+.infra-callout h3 { font-size: 22px; margin: 12px 0; }
+.infra-callout p { font-size: 14px; color: var(--text-light); }
