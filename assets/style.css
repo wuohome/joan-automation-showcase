@@ -453,3 +453,110 @@ body {
 /* ── app.js dynamic event-row (from snapshot.json) ── */
 .event-ago { width: 80px; flex-shrink: 0; }
 .muted { color: var(--text-muted); font-size: 12px; }
+
+/* ============================================================
+   Onboarding Banner (Phase 3)
+   ============================================================ */
+.onboarding-banner {
+  background: linear-gradient(180deg, #F0F7FF 0%, var(--bg-white) 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 24px 40px;
+  position: relative;
+  font-size: 14px;
+}
+.onboarding-banner.hidden { display: none; }
+.onboarding-content { max-width: 900px; margin: 0 auto; }
+.onboarding-content strong {
+  color: var(--accent);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 12px;
+}
+.onboarding-content ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px 24px;
+  margin: 0;
+  padding: 0;
+  counter-reset: step;
+}
+.onboarding-content ol li {
+  font-size: 13px;
+  color: var(--text-main);
+  padding-left: 28px;
+  position: relative;
+  line-height: 1.5;
+  counter-increment: step;
+}
+.onboarding-content ol li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: var(--accent);
+  color: white;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.onboarding-dismiss {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 12px;
+  color: var(--text-light);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+.onboarding-dismiss:hover { border-color: var(--text-emphasis); color: var(--text-emphasis); }
+
+/* ============================================================
+   Doctor expand-content (Phase 3)
+   ============================================================ */
+.expand-content {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 8px;
+  padding: 24px;
+  margin-top: 16px;
+}
+.expand-content[hidden] { display: none; }
+.expand-hint { cursor: pointer; padding: 10px 0; transition: color 0.2s; }
+.expand-hint:hover { color: var(--accent); }
+
+/* ============================================================
+   Visual Polish (Phase 3)
+   ============================================================ */
+
+/* Hero CTA 浮起 */
+.cta-primary { transition: transform 0.2s, box-shadow 0.2s; }
+.cta-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,112,243,0.25); }
+
+/* 生態地圖 node hover */
+.ecosys-layer .node { transition: border-color 0.2s; }
+.ecosys-layer .node.light { cursor: default; }
+.ecosys-layer .node.light:hover { border-color: var(--accent); }
+.ecosys-layer .node.dashed:hover { border-color: var(--accent); border-style: solid; }
+
+/* worker-card hover (暗色區) */
+.worker-card { transition: border-color 0.2s; }
+.worker-card:hover { border-color: var(--accent); }
+
+/* timeline-dot today pulse */
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 2px var(--success); }
+  50% { box-shadow: 0 0 0 6px rgba(12, 206, 107, 0.3); }
+}
+.timeline-dot.today { animation: pulse 2s infinite; }

@@ -54,13 +54,40 @@
   }
 })();
 
-// ── Toggle [展開技術細節] ──
+// ── Onboarding banner dismiss ──
+document.addEventListener('DOMContentLoaded', () => {
+  const banner = document.getElementById('onboarding-banner');
+  if (!banner) return;
+
+  if (localStorage.getItem('onboarding_dismissed') === '1') {
+    banner.classList.add('hidden');
+  }
+
+  document.getElementById('onboarding-dismiss')?.addEventListener('click', () => {
+    banner.classList.add('hidden');
+    localStorage.setItem('onboarding_dismissed', '1');
+  });
+});
+
+// ── Toggle [展開技術細節] — 真實 expand/collapse ──
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.detail-toggle, .expand-hint').forEach(t => {
     t.addEventListener('click', e => {
       e.preventDefault();
-      // Phase 2 補實際 expand content;目前點擊只顯示 alert 提示功能未上線
-      alert('技術細節展開區塊預計 Phase 2 補入(目前 Phase 1 上線中)');
+      const targetId = t.getAttribute('data-toggle');
+      if (targetId) {
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.hidden = !target.hidden;
+          // 更新箭頭符號 ▼ ↔ ▲
+          t.textContent = target.hidden
+            ? t.textContent.replace('▲', '▼')
+            : t.textContent.replace('▼', '▲');
+          return;
+        }
+      }
+      // fallback: detail-toggle 沒 data-toggle 屬性時
+      alert('技術細節（完整圖）規劃中、Phase 4 補入');
     });
   });
 });

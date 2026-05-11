@@ -15,6 +15,23 @@
 <body>
 
   <!-- ======================================================
+       Onboarding Banner — 訪客 5 分鐘路徑引導
+       ====================================================== -->
+  <div class="onboarding-banner" id="onboarding-banner">
+    <div class="onboarding-content">
+      <strong>第一次看？建議 5 分鐘路徑：</strong>
+      <ol>
+        <li>看 Hero 數字 — Joan 蓋了多少（30 秒）</li>
+        <li>滑到 6 業務面 grid — 認識覆蓋哪些工作（1 分鐘）</li>
+        <li>看生態地圖 — 18 系統怎麼串起來（1 分鐘）</li>
+        <li>滑到核心 Infra — Doctor 自動修 + 5 員工（2 分鐘）</li>
+        <li>看時間軸 footer — 67 天從 0 到 19 對外頁（30 秒）</li>
+      </ol>
+      <button class="onboarding-dismiss" id="onboarding-dismiss" aria-label="關閉">✕ 我懂了</button>
+    </div>
+  </div>
+
+  <!-- ======================================================
        Section 1: Hero — 敘事開場
        ====================================================== -->
   <section id="hero">
@@ -266,7 +283,17 @@
           <strong class="accent-text">過去 41 天 L1+L2+L3 自動修了 N 次，Joan 真上場只 X 次。</strong>
         </div>
 
-        <div class="expand-hint">[ 展開技術版完整 mermaid 流程圖 ▼ ]</div>
+        <div class="expand-hint" data-toggle="doctor-detail">[ 展開技術版完整流程圖 ▼ ]</div>
+        <div id="doctor-detail" class="expand-content" hidden>
+          <h4 style="color:white; font-size:14px; margin-bottom:16px;">技術版細節</h4>
+          <ul style="color:#d0d0d0; font-size:13px; line-height:1.8; padding-left:20px;">
+            <li><strong>L1 程式自我重啟</strong>：每隻 Bot run-session.sh while-loop，claude exit/error → 自動 respawn（&lt; 1 秒）</li>
+            <li><strong>L2 launchd KeepAlive</strong>：~/Library/LaunchAgents/com.claude.&lt;bot&gt;.plist + supervisor wrapper，bash 死 20-30 秒被叫醒</li>
+            <li><strong>L3 Doctor 自動修復框架</strong>：HTTP /inject endpoint → Doctor Agent SSH 進 Mac Mini → 跑診斷 SOP → 嘗試自修（重啟服務 / 更新 token / 清 cache）</li>
+            <li><strong>L4 OPS 推送</strong>：Doctor 修不好 → OPS cron 偵測 → Telegram 推 Joan「請親自處理 + SOP 連結」</li>
+          </ul>
+          <p style="color:#999; font-size:12px; margin-top:16px;">技術筆記：[[Doctor 自動修復框架]]、[[Claude_Bot集群架構]]、[[launchd_KeepAlive_踩坑筆記]]</p>
+        </div>
       </div>
     </div>
 
