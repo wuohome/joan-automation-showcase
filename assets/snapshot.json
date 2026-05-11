@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-05-11 23:27",
+  "last_sync": "2026-05-12 00:27",
   "summary": {
     "systems_total": 18,
     "all_workers_online": true,
@@ -11,35 +11,35 @@
       "name": "CC",
       "role": "對話派工",
       "model": "Opus",
-      "uptime_days": 67,
+      "uptime_days": 68,
       "last_heartbeat": "8 秒前"
     },
     {
       "name": "Doctor",
       "role": "自動修",
       "model": "Opus",
-      "uptime_days": 67,
+      "uptime_days": 68,
       "last_heartbeat": "5 秒前"
     },
     {
       "name": "SEC",
       "role": "訊息匯總",
       "model": "Sonnet",
-      "uptime_days": 67,
+      "uptime_days": 68,
       "last_heartbeat": "14 秒前"
     },
     {
       "name": "OPS",
       "role": "系統 alert",
       "model": "cron",
-      "uptime_days": 67,
+      "uptime_days": 68,
       "last_heartbeat": "30 分前"
     },
     {
       "name": "LINE 採購",
       "role": "採購單建立",
       "model": "Sonnet",
-      "uptime_days": 67,
+      "uptime_days": 68,
       "last_heartbeat": "6 秒前"
     }
   ],
