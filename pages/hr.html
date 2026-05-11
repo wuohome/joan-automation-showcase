@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR & 人事 — 窩的家自動化作品集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body class="bg-gray-50">
+  <main class="detail-page">
+    <div class="breadcrumb">
+      <a href="../index.html">← 回首頁</a>
+      <span>/</span>
+      <span>HR & 人事</span>
+    </div>
+
+    <header class="detail-header-section">
+      <div class="kicker accent">HR & 人事</div>
+      <h1>5 個系統撐起整個招募 + 人事流程</h1>
+      <p class="lead">從 104 應徵到 TimeTree 排面試、每日點名到新員工入職表 — 全程不用 Joan 動手</p>
+    </header>
+
+    <!-- 系統卡片 1：104 自動招募 + HR Agent -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 1 / 5</div>
+          <h2>104 自動招募 + HR Agent</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">2026-04-01 上線 · 41 天</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>8</strong> <span>場面試/週</span></div>
+        <div><strong>95%</strong> <span>自動回覆率</span></div>
+        <div><strong>~30 分</strong> <span>應徵→回覆</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>每 30 分鐘自動進 104 後台 → 抓新應徵者 + 訊息 → 用業務規則自動分類（房仲/行政/設計）→ 結構化事件直接回覆 + 排面試；候選人寫自由文字（譬如「想改 5/15」）→ AI 判斷意圖 → 自動改 TimeTree → 通知 Joan。<strong>整段不用 Joan 動手</strong>。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://github.com/wuohome/104-recruit">📦 GitHub: wuohome/104-recruit</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 2：白板式排班系統 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 2 / 5</div>
+          <h2>白板式排班系統</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">珊珊每日維護</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>7</strong> <span>業務同時用</span></div>
+        <div><strong>3</strong> <span>班別自動排</span></div>
+        <div><strong>即時</strong> <span>全店看得到</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>珊珊在排班表手機點選每個業務的班別（出勤/外出/排休/值日）→ 即時寫進 Ragic → 同時 sync 到全店共用的 schedule-view.html → 業務手機隨時看自己這週狀態。值日生會自動排（避免漏排）。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://wuohome.github.io/ragic/schedule.html">🌐 對外: schedule.html</a>
+        <a href="https://github.com/wuohome/ragic">📦 GitHub: wuohome/ragic</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 3：每日行程點名 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 3 / 5</div>
+          <h2>每日行程點名</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">LINE Bot 觸發</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>10+</strong> <span>業務每日</span></div>
+        <div><strong>&lt;5 秒</strong> <span>回應</span></div>
+        <div><strong>0</strong> <span>人工催</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>LINE 群組打「點名」→ Bot 立刻查 Ragic 每日工作行程表 → 回覆誰沒填行程 → 沒填的業務直接被點名（沒人能裝沒看到）。每天早會前一秒就能知道誰漏了。</p>
+      </div>
+      <div class="detail-links">
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 4：新員工入職表 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 4 / 5</div>
+          <h2>新員工入職表（手機優先）</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">production</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>手機</strong> <span>優先設計</span></div>
+        <div><strong>0</strong> <span>紙本</span></div>
+        <div><strong>Ragic</strong> <span>直接寫入</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>新員工到職第一天 → 手機掃 QR Code 開 hr-onboarding.html → 在手機上填好身分證 / 緊急聯絡人 / 帳戶等基本資料 → 直接寫進 Ragic 人事資料表 → HR 不用再 key 一次。</p>
+      </div>
+      <div class="detail-links">
+        <a href="https://wuohome.github.io/ragic/hr-onboarding.html">🌐 對外: hr-onboarding.html</a>
+        <a href="https://github.com/wuohome/ragic">📦 GitHub: wuohome/ragic</a>
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+    <!-- 系統卡片 5：TimeTree 整合 -->
+    <article class="detail-card">
+      <div class="detail-header">
+        <div>
+          <div class="detail-counter">系統 5 / 5</div>
+          <h2>TimeTree 面試行程整合</h2>
+        </div>
+        <div class="detail-status">
+          <div><span class="dot dot-green"></span>運作中</div>
+          <div class="detail-uptime">與 Joan 老闆共用日曆</div>
+        </div>
+      </div>
+      <div class="detail-stats">
+        <div><strong>自動</strong> <span>建面試行程</span></div>
+        <div><strong>自動</strong> <span>偵測爽約</span></div>
+        <div><strong>自動</strong> <span>排程改期</span></div>
+      </div>
+      <div class="detail-narrative-block">
+        <div class="kicker">怎麼運作</div>
+        <p>104 候選人接受面試 → 系統自動在 Joan + 老闆共用的 TimeTree 上建行程（藍色 label）→ 面試前 1 小時 reminder → 候選人改期/爽約 → 自動偵測 + 自動 reschedule，Joan 不用手動改。</p>
+      </div>
+      <div class="detail-links">
+        <a href="#" class="detail-toggle">[ 展開技術細節 ▼ ]</a>
+      </div>
+    </article>
+
+  </main>
+</body>
+</html>

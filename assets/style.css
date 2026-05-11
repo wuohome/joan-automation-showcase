@@ -421,3 +421,30 @@ body {
 .next-callout p { font-size: 14px; color: var(--text-light); line-height: 1.6; max-width: 600px; margin: 0 auto; }
 .footer { text-align: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-muted); }
 .footer > div { margin-bottom: 8px; }
+
+/* ============================================================
+   Section 6: Detail Page
+   ============================================================ */
+.detail-page { max-width: 900px; margin: 0 auto; padding: 60px 40px; }
+.breadcrumb { font-size: 13px; color: var(--text-light); margin-bottom: 32px; }
+.breadcrumb a { color: var(--accent); text-decoration: none; }
+.breadcrumb span { margin: 0 8px; }
+.detail-header-section { margin-bottom: 40px; }
+.detail-header-section .kicker { font-size: 11px; letter-spacing: 0.15em; color: var(--accent); text-transform: uppercase; font-weight: 600; margin-bottom: 12px; }
+.detail-header-section h1 { font-size: 40px; letter-spacing: -0.03em; color: var(--text-emphasis); margin-bottom: 16px; font-weight: 700; }
+.detail-header-section .lead { font-size: 18px; color: var(--text-light); line-height: 1.5; }
+.detail-card { background: var(--bg-white); border: 1px solid var(--border); border-radius: 12px; padding: 32px; margin-bottom: 20px; }
+.detail-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px; }
+.detail-counter { font-size: 11px; color: var(--text-muted); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 6px; }
+.detail-card h2 { font-size: 24px; color: var(--text-emphasis); margin: 0; font-weight: 600; }
+.detail-status { text-align: right; font-size: 12px; color: var(--text-muted); }
+.detail-uptime { margin-top: 4px; }
+.detail-stats { display: flex; gap: 24px; padding: 16px 20px; background: var(--bg-gray-50); border-radius: 8px; margin-bottom: 20px; font-size: 13px; }
+.detail-stats strong { color: var(--text-emphasis); font-size: 20px; }
+.detail-stats span { color: var(--text-muted); }
+.detail-narrative-block { margin-bottom: 20px; }
+.detail-narrative-block .kicker { font-size: 11px; color: var(--text-light); letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; margin-bottom: 8px; }
+.detail-narrative-block p { font-size: 14px; color: var(--text-main); line-height: 1.7; }
+.detail-links { display: flex; gap: 24px; font-size: 13px; padding-top: 16px; border-top: 1px solid var(--bg-gray-50); flex-wrap: wrap; }
+.detail-links a { color: var(--accent); text-decoration: none; }
+.detail-toggle { color: var(--text-light) !important; cursor: pointer; }
