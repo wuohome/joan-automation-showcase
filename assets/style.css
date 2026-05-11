@@ -399,3 +399,25 @@ body {
 .event-desc {
   flex: 1;
 }
+
+/* ============================================================
+   Section 5: Timeline + Footer
+   ============================================================ */
+#timeline-footer { padding: 80px 40px; background: var(--bg-white); }
+.timeline-wrap { max-width: 1100px; margin: 0 auto; }
+.timeline-track { position: relative; padding: 40px 0; margin-bottom: 60px; }
+.timeline-line { position: absolute; top: 50%; left: 0; right: 0; height: 2px; background: var(--border); z-index: 0; }
+.timeline-nodes { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; position: relative; z-index: 1; }
+.timeline-node { text-align: center; }
+.timeline-date { font-size: 11px; color: var(--text-muted); margin-bottom: 8px; letter-spacing: 0.05em; }
+.timeline-dot { width: 10px; height: 10px; background: var(--text-emphasis); border-radius: 50%; margin: 0 auto 12px auto; }
+.timeline-dot.start { width: 14px; height: 14px; background: var(--accent); border: 3px solid white; box-shadow: 0 0 0 2px var(--accent); }
+.timeline-dot.today { width: 14px; height: 14px; background: var(--success); border: 3px solid white; box-shadow: 0 0 0 2px var(--success); }
+.timeline-title { font-size: 12px; color: var(--text-emphasis); font-weight: 600; line-height: 1.4; }
+.timeline-desc { font-size: 11px; color: var(--text-light); margin-top: 4px; line-height: 1.4; }
+.next-callout { background: var(--bg-gray-50); border: 1px solid var(--border); border-radius: 12px; padding: 40px; text-align: center; }
+.next-callout .accent { color: var(--accent); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 600; margin-bottom: 12px; }
+.next-callout h3 { font-size: 22px; color: var(--text-emphasis); margin: 0 0 12px 0; font-weight: 600; }
+.next-callout p { font-size: 14px; color: var(--text-light); line-height: 1.6; max-width: 600px; margin: 0 auto; }
+.footer { text-align: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); font-size: 12px; color: var(--text-muted); }
+.footer > div { margin-bottom: 8px; }
