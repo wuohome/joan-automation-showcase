@@ -178,7 +178,8 @@ body {
   color: #a0a0a0;
   line-height: 1.4;
 }
-.worker-status {
+.worker-status,
+.heartbeat {
   margin-top: 12px;
   font-size: 11px;
   color: var(--success);
@@ -448,3 +449,7 @@ body {
 .detail-links { display: flex; gap: 24px; font-size: 13px; padding-top: 16px; border-top: 1px solid var(--bg-gray-50); flex-wrap: wrap; }
 .detail-links a { color: var(--accent); text-decoration: none; }
 .detail-toggle { color: var(--text-light) !important; cursor: pointer; }
+
+/* ── app.js dynamic event-row (from snapshot.json) ── */
+.event-ago { width: 80px; flex-shrink: 0; }
+.muted { color: var(--text-muted); font-size: 12px; }

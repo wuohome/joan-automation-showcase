@@ -175,44 +175,44 @@
       <div class="infra-block-label">① 5 隻 AI 員工 · 24/7 值班</div>
       <div class="worker-grid">
 
-        <div class="worker-card">
+        <div class="worker-card" data-worker="CC">
           <div class="worker-emoji">🤖</div>
           <div class="worker-name">小特助 CC</div>
           <div class="worker-role">Channel · Opus</div>
           <div class="worker-desc">日常對話 / 任務派遣</div>
-          <div class="worker-status">🟢 41 天 · 8 秒前</div>
+          <div class="heartbeat">🟢 41 天 · 8 秒前</div>
         </div>
 
-        <div class="worker-card">
+        <div class="worker-card" data-worker="Doctor">
           <div class="worker-emoji">🩺</div>
           <div class="worker-name">Doctor</div>
           <div class="worker-role">Diagnosis · Opus</div>
           <div class="worker-desc">自動診斷修復其他 bot</div>
-          <div class="worker-status">🟢 41 天 · 5 秒前</div>
+          <div class="heartbeat">🟢 41 天 · 5 秒前</div>
         </div>
 
-        <div class="worker-card">
+        <div class="worker-card" data-worker="SEC">
           <div class="worker-emoji">📋</div>
           <div class="worker-name">秘書 SEC</div>
           <div class="worker-role">Secretary · Sonnet</div>
           <div class="worker-desc">LINE 訊息匯總 / 排程</div>
-          <div class="worker-status">🟢 41 天 · 14 秒前</div>
+          <div class="heartbeat">🟢 41 天 · 14 秒前</div>
         </div>
 
-        <div class="worker-card">
+        <div class="worker-card" data-worker="OPS">
           <div class="worker-emoji">🚨</div>
           <div class="worker-name">OPS</div>
           <div class="worker-role">Operations · cron</div>
           <div class="worker-desc">系統 alert / 週報 / audit 推 Joan</div>
-          <div class="worker-status">🟢 41 天 · 30 分前</div>
+          <div class="heartbeat">🟢 41 天 · 30 分前</div>
         </div>
 
-        <div class="worker-card">
+        <div class="worker-card" data-worker="LINE 採購">
           <div class="worker-emoji">🛒</div>
           <div class="worker-name">LINE 採購</div>
           <div class="worker-role">Purchase · Sonnet</div>
           <div class="worker-desc">採購單自動建</div>
-          <div class="worker-status">🟢 41 天 · 6 秒前</div>
+          <div class="heartbeat">🟢 41 天 · 6 秒前</div>
         </div>
 
       </div>
@@ -277,7 +277,7 @@
 
         <div class="hook-section-top">
           <p class="hook-desc">每個 AI 員工動手前/後過 13 條規則檢查 — 防犯重複錯、防 token 浪費、強制查 vault 不憑記憶。</p>
-          <div class="hook-count-box">
+          <div class="hook-count-box" id="hook-summary">
             <div class="hook-count-num">13</div>
             <div class="hook-count-label">註冊</div>
             <div class="hook-count-sub">過去 7 天觸發 <strong class="success-text">N</strong> 次</div>
@@ -340,7 +340,8 @@
           <span class="muted-text">最後同步 14 秒前</span>
         </div>
 
-        <div class="event-list">
+        <div class="event-list" id="events-feed">
+          <!-- JS will populate from snapshot.json; fallback static rows shown until fetch -->
           <div class="event-row">
             <span class="event-time success-text">12 分鐘前</span>
             <span class="event-source">採購</span>
