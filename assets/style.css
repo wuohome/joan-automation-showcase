@@ -1,0 +1,37 @@
+/* ============================================================
+   Vercel Design Tokens — joan-automation-showcase
+   ============================================================ */
+:root {
+  --bg-white: #FFFFFF;
+  --bg-gray-50: #FAFAFA;
+  --border: #EAEAEA;
+  --text-muted: #8F8F8F;
+  --text-light: #666666;
+  --text-main: #171717;
+  --text-emphasis: #000000;
+  --accent: #0070F3;
+  --success: #0CCE6B;
+  --warning: #F5A623;
+  --dark-bg: #0A0A0A;
+  --dark-card: #1A1A1A;
+  --dark-border: #2A2A2A;
+}
+
+/* ============================================================
+   Reset
+   ============================================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+body {
+  font-family: 'Inter', 'Noto Sans TC', 'PingFang TC', sans-serif;
+  color: var(--text-main);
+  background: var(--bg-white);
+  line-height: 1.6;
+}
