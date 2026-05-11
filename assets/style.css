@@ -90,3 +90,312 @@ body {
 .example-callout .kicker { font-size: 11px; letter-spacing: 0.08em; color: var(--text-light); text-transform: uppercase; font-weight: 600; margin-bottom: 8px; }
 .example-callout p { font-size: 14px; color: var(--text-main); line-height: 1.7; }
 .section-sub { font-size: 15px; color: var(--text-light); margin-top: 8px; }
+
+/* ============================================================
+   Core Infra Section (Section 4) — 暗色底
+   ============================================================ */
+
+/* Section 容器 */
+.core-infra {
+  background: var(--dark-bg);
+  color: #fff;
+  padding: 80px 40px;
+}
+
+/* 標題區 */
+.infra-section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.infra-kicker {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.infra-title {
+  font-size: 36px;
+  letter-spacing: -0.02em;
+  color: #fff;
+  margin: 0 0 16px 0;
+  font-weight: 600;
+}
+.infra-subtitle {
+  font-size: 16px;
+  color: #a0a0a0;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+/* 每個子區塊容器 */
+.infra-block {
+  max-width: 1100px;
+  margin: 0 auto 80px auto;
+}
+.infra-block-last {
+  margin-bottom: 0;
+}
+.infra-block-label {
+  font-size: 11px;
+  color: #a0a0a0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ① Worker Grid */
+.worker-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+}
+.worker-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+}
+.worker-emoji {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+.worker-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 4px;
+}
+.worker-role {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 10px;
+}
+.worker-desc {
+  font-size: 11px;
+  color: #a0a0a0;
+  line-height: 1.4;
+}
+.worker-status {
+  margin-top: 12px;
+  font-size: 11px;
+  color: var(--success);
+}
+.worker-note {
+  margin-top: 16px;
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+}
+
+/* ② Doctor Flow */
+.doctor-flow {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 40px;
+}
+.doctor-flow-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+.flow-step {
+  text-align: center;
+  min-width: 90px;
+}
+.flow-icon {
+  font-size: 28px;
+}
+.flow-name {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #fff;
+}
+.flow-time {
+  font-size: 10px;
+  color: #666;
+  margin-top: 2px;
+}
+.flow-arrow {
+  color: #666;
+  font-size: 20px;
+}
+.doctor-callout {
+  background: var(--dark-bg);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #d0d0d0;
+  line-height: 1.7;
+}
+.callout-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.accent-text {
+  color: var(--accent);
+}
+.expand-hint {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  cursor: default;
+}
+
+/* ③ Hook Section */
+.hook-section {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 32px;
+}
+.hook-section-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--dark-border);
+  gap: 32px;
+}
+.hook-desc {
+  font-size: 14px;
+  color: #d0d0d0;
+  line-height: 1.6;
+  flex: 1;
+}
+.hook-count-box {
+  text-align: right;
+  white-space: nowrap;
+}
+.hook-count-num {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+.hook-count-label {
+  font-size: 13px;
+  color: #d0d0d0;
+}
+.hook-count-sub {
+  font-size: 11px;
+  color: #999;
+  margin-top: 4px;
+}
+.hook-list {
+  font-size: 13px;
+  color: #d0d0d0;
+}
+.hook-row {
+  display: grid;
+  grid-template-columns: 1fr 80px 80px;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--dark-border);
+  align-items: center;
+}
+.hook-row-dim {
+  color: #666;
+}
+.hook-name {
+  /* flex-fill */
+}
+.hook-hits {
+  text-align: right;
+}
+.hook-level {
+  text-align: right;
+  font-size: 11px;
+  color: #666;
+}
+.hook-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #666;
+}
+.hook-footer .expand-hint {
+  margin-top: 0;
+  text-align: right;
+  color: var(--accent);
+}
+.hook-warning {
+  margin-top: 24px;
+  background: var(--dark-bg);
+  border-left: 3px solid var(--warning);
+  border-radius: 0 8px 8px 0;
+  padding: 14px 18px;
+  font-size: 13px;
+  color: #d0d0d0;
+  line-height: 1.6;
+}
+.warning-label {
+  color: var(--warning);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 6px;
+}
+.success-text { color: var(--success); }
+.warning-text { color: var(--warning); }
+
+/* ④ Heartbeat Section */
+.heartbeat-section {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: 12px;
+  padding: 32px;
+}
+.heartbeat-status-bar {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: #d0d0d0;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--dark-border);
+  flex-wrap: wrap;
+  align-items: center;
+}
+.muted-text { color: #999; }
+.event-list {
+  font-size: 13px;
+  color: #d0d0d0;
+}
+.event-row {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--dark-border);
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+}
+.event-row-last {
+  border-bottom: none;
+}
+.event-time {
+  width: 70px;
+  flex-shrink: 0;
+}
+.event-source {
+  width: 60px;
+  flex-shrink: 0;
+  color: #999;
+}
+.event-desc {
+  flex: 1;
+}

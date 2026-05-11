@@ -163,8 +163,209 @@
   <!-- ======================================================
        Section 4: Core Infrastructure — 底層基礎設施說明
        ====================================================== -->
-  <section id="core-infra">
-    <!-- Task 5 fills this section -->
+  <section id="core-infra" class="core-infra">
+    <div class="infra-section-header">
+      <div class="kicker infra-kicker">⚙ 核心 INFRA</div>
+      <h2 class="infra-title">會自己診斷修復的 AI 員工 + 規則治理</h2>
+      <p class="infra-subtitle">這不是「裝了 5 個 bot 就好」 — 替系統蓋了完整的監測、自修、規則把關、跨 bot 協作機制</p>
+    </div>
+
+    <!-- ① 5 隻 AI 員工 · 24/7 值班 -->
+    <div class="infra-block">
+      <div class="infra-block-label">① 5 隻 AI 員工 · 24/7 值班</div>
+      <div class="worker-grid">
+
+        <div class="worker-card">
+          <div class="worker-emoji">🤖</div>
+          <div class="worker-name">小特助 CC</div>
+          <div class="worker-role">Channel · Opus</div>
+          <div class="worker-desc">日常對話 / 任務派遣</div>
+          <div class="worker-status">🟢 41 天 · 8 秒前</div>
+        </div>
+
+        <div class="worker-card">
+          <div class="worker-emoji">🩺</div>
+          <div class="worker-name">Doctor</div>
+          <div class="worker-role">Diagnosis · Opus</div>
+          <div class="worker-desc">自動診斷修復其他 bot</div>
+          <div class="worker-status">🟢 41 天 · 5 秒前</div>
+        </div>
+
+        <div class="worker-card">
+          <div class="worker-emoji">📋</div>
+          <div class="worker-name">秘書 SEC</div>
+          <div class="worker-role">Secretary · Sonnet</div>
+          <div class="worker-desc">LINE 訊息匯總 / 排程</div>
+          <div class="worker-status">🟢 41 天 · 14 秒前</div>
+        </div>
+
+        <div class="worker-card">
+          <div class="worker-emoji">🚨</div>
+          <div class="worker-name">OPS</div>
+          <div class="worker-role">Operations · cron</div>
+          <div class="worker-desc">系統 alert / 週報 / audit 推 Joan</div>
+          <div class="worker-status">🟢 41 天 · 30 分前</div>
+        </div>
+
+        <div class="worker-card">
+          <div class="worker-emoji">🛒</div>
+          <div class="worker-name">LINE 採購</div>
+          <div class="worker-role">Purchase · Sonnet</div>
+          <div class="worker-desc">採購單自動建</div>
+          <div class="worker-status">🟢 41 天 · 6 秒前</div>
+        </div>
+
+      </div>
+      <div class="worker-note">注：簡家財務 bot 為私人事業，不在窩的家 Showcase 範圍</div>
+    </div>
+
+    <!-- ② Doctor 自動修流程 · 4 層保險 -->
+    <div class="infra-block">
+      <div class="infra-block-label">② Doctor 自動修流程 · 4 層保險</div>
+      <div class="doctor-flow">
+        <div class="doctor-flow-steps">
+
+          <div class="flow-step">
+            <div class="flow-icon">💀</div>
+            <div class="flow-name">Bot 死掉</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">⚙</div>
+            <div class="flow-name">L1 自己重啟</div>
+            <div class="flow-time">&lt; 1 秒</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">👮</div>
+            <div class="flow-name">L2 Mac 保母</div>
+            <div class="flow-time">20-30 秒</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">🩺</div>
+            <div class="flow-name">L3 Doctor 修</div>
+            <div class="flow-time">1-3 分</div>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <div class="flow-icon">🚨</div>
+            <div class="flow-name">L4 OPS 通知</div>
+            <div class="flow-time">10-15 分</div>
+          </div>
+
+        </div>
+
+        <div class="doctor-callout">
+          <div class="callout-label">白話版</div>
+          Bot 出狀況時系統有 <strong>4 層保險</strong>：
+          <strong>L1</strong> 程式自己有迴圈、掛了 1 秒重來；
+          <strong>L2</strong> Mac 內建保母 launchd 20-30 秒叫醒整個程式；
+          <strong>L3</strong> 還是不行 → Doctor 自己 SSH 進 Mac Mini 跑診斷、自動修；
+          <strong>L4</strong> 連 Doctor 也搞不定 → <strong class="accent-text">OPS</strong> 推 Telegram 通知 Joan 親自上場。
+          <strong class="accent-text">過去 41 天 L1+L2+L3 自動修了 N 次，Joan 真上場只 X 次。</strong>
+        </div>
+
+        <div class="expand-hint">[ 展開技術版完整 mermaid 流程圖 ▼ ]</div>
+      </div>
+    </div>
+
+    <!-- ③ Hook 守衛 · 過去 7 天觸發實況 -->
+    <div class="infra-block">
+      <div class="infra-block-label">③ Hook 守衛 · 過去 7 天觸發實況</div>
+      <div class="hook-section">
+
+        <div class="hook-section-top">
+          <p class="hook-desc">每個 AI 員工動手前/後過 13 條規則檢查 — 防犯重複錯、防 token 浪費、強制查 vault 不憑記憶。</p>
+          <div class="hook-count-box">
+            <div class="hook-count-num">13</div>
+            <div class="hook-count-label">註冊</div>
+            <div class="hook-count-sub">過去 7 天觸發 <strong class="success-text">N</strong> 次</div>
+          </div>
+        </div>
+
+        <div class="hook-list">
+          <div class="hook-row">
+            <span class="hook-name">📍 pitfall-reflex · 踩坑前查表</span>
+            <span class="hook-hits success-text">122 次</span>
+            <span class="hook-level">高活躍</span>
+          </div>
+          <div class="hook-row">
+            <span class="hook-name">🐒 monkey-detector · 反 AI 退化</span>
+            <span class="hook-hits success-text">N 次</span>
+            <span class="hook-level">活躍</span>
+          </div>
+          <div class="hook-row">
+            <span class="hook-name">🔍 dispatch-vault-explorer · 強制派 sub-agent</span>
+            <span class="hook-hits success-text">N 次</span>
+            <span class="hook-level">活躍</span>
+          </div>
+          <div class="hook-row">
+            <span class="hook-name">🛑 vault-ssh-block · 攔 SSH 進 vault</span>
+            <span class="hook-hits warning-text">N 次</span>
+            <span class="hook-level">中</span>
+          </div>
+          <div class="hook-row hook-row-dim">
+            <span class="hook-name">🔒 credential-detector · 偵測貼入 secret</span>
+            <span class="hook-hits">0 次</span>
+            <span class="hook-level">備用</span>
+          </div>
+        </div>
+
+        <div class="hook-footer">
+          <span>顯示 5/13，展開看全部</span>
+          <span class="expand-hint">[ 展開全部 13 條矩陣 ▼ ]</span>
+        </div>
+
+        <div class="hook-warning">
+          <strong class="warning-label">⚠ 誠實揭露</strong>
+          有些 hook（譬如 credential-detector）長期 0 次觸發 — 不是壞了，是「備用安全網」（沒人貼 secret 才不觸發）。Phase 2 會做 hook 活躍度 audit：活躍 vs 備用 vs 失效三類，失效的 retire。
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ④ 真實運作中 · 過去 24h 事件流（脫敏） -->
+    <div class="infra-block infra-block-last">
+      <div class="infra-block-label">④ 真實運作中 · 過去 24h 事件流（脫敏）</div>
+      <div class="heartbeat-section">
+
+        <div class="heartbeat-status-bar">
+          <span><span class="dot dot-green"></span>所有員工在線</span>
+          <span>·</span>
+          <span>n8n 工作流 ✓</span>
+          <span>·</span>
+          <span>對外服務 17/17 ✓</span>
+          <span>·</span>
+          <span class="muted-text">最後同步 14 秒前</span>
+        </div>
+
+        <div class="event-list">
+          <div class="event-row">
+            <span class="event-time success-text">12 分鐘前</span>
+            <span class="event-source">採購</span>
+            <span class="event-desc">新採購單建立成功</span>
+          </div>
+          <div class="event-row">
+            <span class="event-time success-text">38 分鐘前</span>
+            <span class="event-source">招募</span>
+            <span class="event-desc">104 新應徵自動分類 · 1 件排面試 / 2 件待 Joan</span>
+          </div>
+          <div class="event-row">
+            <span class="event-time warning-text">2 小時前</span>
+            <span class="event-source">Doctor</span>
+            <span class="event-desc">n8n workflow 一條卡住 → 自動重啟成功</span>
+          </div>
+          <div class="event-row event-row-last">
+            <span class="event-time success-text">5 小時前</span>
+            <span class="event-source">業績</span>
+            <span class="event-desc">每日業績表自動更新 GitHub Pages dashboard</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
   </section>
 
   <!-- ======================================================
