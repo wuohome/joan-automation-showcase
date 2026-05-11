@@ -68,3 +68,25 @@ body {
 .infra-callout .accent { color: var(--accent); }
 .infra-callout h3 { font-size: 22px; margin: 12px 0; }
 .infra-callout p { font-size: 14px; color: var(--text-light); }
+
+/* ============================================================
+   Ecosystem Map Section
+   ============================================================ */
+.ecosys-layer { max-width: 1100px; margin: 0 auto 8px auto; padding: 0 40px; }
+.layer-label { font-size: 10px; letter-spacing: 0.1em; color: var(--accent); text-transform: uppercase; font-weight: 700; margin-bottom: 12px; }
+.grid-5col { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.grid-6col { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.grid-4col { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.node { border-radius: 8px; padding: 14px; text-align: center; }
+.node.light { background: var(--bg-gray-50); border: 1px solid var(--border); }
+.node.dark { background: var(--dark-bg); color: white; }
+.node.dashed { background: var(--bg-white); border: 1px dashed var(--accent); }
+.node .icon { font-size: 22px; }
+.node .name { font-size: 12px; font-weight: 600; margin-top: 6px; }
+.node .desc { font-size: 10px; color: var(--text-muted); margin-top: 2px; }
+.node.dark .desc { color: #999; }
+.layer-arrow { text-align: center; color: #ccc; font-size: 18px; letter-spacing: 24px; margin: 8px 0; }
+.example-callout { max-width: 900px; margin: 60px auto 80px auto; background: var(--bg-gray-50); border-left: 3px solid var(--accent); padding: 20px 24px; border-radius: 0 8px 8px 0; }
+.example-callout .kicker { font-size: 11px; letter-spacing: 0.08em; color: var(--text-light); text-transform: uppercase; font-weight: 600; margin-bottom: 8px; }
+.example-callout p { font-size: 14px; color: var(--text-main); line-height: 1.7; }
+.section-sub { font-size: 15px; color: var(--text-light); margin-top: 8px; }

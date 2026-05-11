@@ -104,7 +104,60 @@
        Section 3: Ecosystem Map — 系統串接關係圖
        ====================================================== -->
   <section id="ecosystem-map">
-    <!-- Task 4 fills this section -->
+    <div class="section-header">
+      <div class="kicker">生態地圖</div>
+      <h2>18 個系統怎麼串起來</h2>
+      <p class="section-sub">三層架構: 訪客介面 → AI 員工處理 → 資料儲存</p>
+    </div>
+
+    <div class="ecosys-layer">
+      <div class="layer-label">① 訪客 / 員工進來的介面</div>
+      <div class="grid-5col">
+        <div class="node light"><div class="icon">📱</div><div class="name">Telegram</div><div class="desc">Joan 個人</div></div>
+        <div class="node light"><div class="icon">💬</div><div class="name">LINE 群組</div><div class="desc">業務 / 廠商 / 房客</div></div>
+        <div class="node light"><div class="icon">🌐</div><div class="name">GitHub Pages</div><div class="desc">17 對外頁面</div></div>
+        <div class="node light"><div class="icon">📋</div><div class="name">104 平台</div><div class="desc">招募後台</div></div>
+        <div class="node light"><div class="icon">📅</div><div class="name">TimeTree</div><div class="desc">行事曆</div></div>
+      </div>
+    </div>
+
+    <div class="layer-arrow">↓↓↓↓↓</div>
+
+    <div class="ecosys-layer">
+      <div class="layer-label">② AI 員工 + 自動化處理(Mac Mini 24/7)</div>
+      <div class="grid-6col">
+        <div class="node dark"><div class="icon">🤖</div><div class="name">CC</div><div class="desc">對話派工</div></div>
+        <div class="node dark"><div class="icon">🩺</div><div class="name">Doctor</div><div class="desc">自動修</div></div>
+        <div class="node dark"><div class="icon">📋</div><div class="name">SEC</div><div class="desc">訊息匯總</div></div>
+        <div class="node dark"><div class="icon">🚨</div><div class="name">OPS</div><div class="desc">系統 alert</div></div>
+        <div class="node dark"><div class="icon">🛒</div><div class="name">LINE 採購</div><div class="desc">採購單建立</div></div>
+        <div class="node dashed"><div class="icon">⚙</div><div class="name">n8n</div><div class="desc">5 個 workflow</div></div>
+      </div>
+      <div class="grid-4col" style="margin-top:12px">
+        <div class="node dashed"><div class="icon">⏰</div><div class="name">launchd cron</div><div class="desc">排程</div></div>
+        <div class="node dashed"><div class="icon">🎭</div><div class="name">Playwright</div><div class="desc">爬蟲</div></div>
+        <div class="node dashed"><div class="icon">🧠</div><div class="name">Memory Engine</div><div class="desc">語意記憶</div></div>
+        <div class="node dashed"><div class="icon">🛡</div><div class="name">13 Hooks</div><div class="desc">規則守衛</div></div>
+      </div>
+    </div>
+
+    <div class="layer-arrow">↓↓↓↓↓</div>
+
+    <div class="ecosys-layer">
+      <div class="layer-label">③ 資料儲存層</div>
+      <div class="grid-5col">
+        <div class="node light"><div class="icon">📊</div><div class="name">Ragic</div><div class="desc">56 sheet</div></div>
+        <div class="node light"><div class="icon">📚</div><div class="name">Vault</div><div class="desc">671 筆記</div></div>
+        <div class="node light"><div class="icon">📦</div><div class="name">GitHub repo</div><div class="desc">9 個 repo</div></div>
+        <div class="node light"><div class="icon">💾</div><div class="name">SQLite</div><div class="desc">591 / 招募 DB</div></div>
+        <div class="node light"><div class="icon">☁</div><div class="name">Google Sheet</div><div class="desc">業績原始檔</div></div>
+      </div>
+    </div>
+
+    <div class="example-callout">
+      <div class="kicker">白話版</div>
+      <p>業務在 LINE 拍報價單照片(①介面) → <strong>LINE 採購 Bot</strong> AI OCR 解析(②處理) → 寫進 <strong>Ragic 採購表</strong>(③儲存) → 業務收到「採購單已建立」。整段 15 秒、不用人工。<strong>所有 18 系統都是這個三層模式變奏。</strong></p>
+    </div>
   </section>
 
   <!-- ======================================================
