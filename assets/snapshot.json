@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-05-12 05:28",
+  "last_sync": "2026-06-04 11:52",
   "summary": {
     "systems_total": 18,
     "all_workers_online": true,
@@ -11,35 +11,35 @@
       "name": "CC",
       "role": "對話派工",
       "model": "Opus",
-      "uptime_days": 68,
+      "uptime_days": 91,
       "last_heartbeat": "8 秒前"
     },
     {
       "name": "Doctor",
       "role": "自動修",
       "model": "Opus",
-      "uptime_days": 68,
+      "uptime_days": 91,
       "last_heartbeat": "5 秒前"
     },
     {
       "name": "SEC",
       "role": "訊息匯總",
       "model": "Sonnet",
-      "uptime_days": 68,
+      "uptime_days": 91,
       "last_heartbeat": "14 秒前"
     },
     {
       "name": "OPS",
       "role": "系統 alert",
       "model": "cron",
-      "uptime_days": 68,
+      "uptime_days": 91,
       "last_heartbeat": "30 分前"
     },
     {
       "name": "LINE 採購",
       "role": "採購單建立",
       "model": "Sonnet",
-      "uptime_days": 68,
+      "uptime_days": 91,
       "last_heartbeat": "6 秒前"
     }
   ],
@@ -50,80 +50,93 @@
     "recent_hits": [
       {
         "name": "pitfall-reflex",
-        "label": "踩坑前查表",
+        "label": "踩坤前查表",
         "count_7d": 143,
+        "source": "static",
         "level": "active"
       },
       {
         "name": "read-discipline",
         "label": "大檔限速保護",
         "count_7d": 335,
+        "source": "static",
         "level": "active"
       },
       {
         "name": "session-logger",
         "label": "對話紀錄存檔",
-        "count_7d": 268,
+        "count_7d": 25,
+        "source": "live",
         "level": "active"
       },
       {
         "name": "monkey-detector",
-        "label": "反 AI 退化偵測",
-        "count_7d": 35,
+        "label": "反 AI 退化偉測",
+        "count_7d": 0,
+        "source": "live",
         "level": "active"
       },
       {
         "name": "vault-validator",
         "label": "vault 寫入合規",
         "count_7d": 80,
+        "source": "static",
         "level": "active"
       },
       {
         "name": "dispatch-vault-explorer",
         "label": "強制派 vault sub-agent",
         "count_7d": 25,
+        "source": "static",
         "level": "active"
       },
       {
         "name": "enforce-subagent-type",
         "label": "Agent 型別強制",
         "count_7d": 18,
+        "source": "static",
         "level": "active"
       },
       {
         "name": "persistent-bypass",
         "label": "權限自動放行",
         "count_7d": 500,
+        "source": "static",
         "level": "active"
       },
       {
         "name": "credential-detector",
-        "label": "偵測貼入 secret",
+        "label": "偉測貼入 secret",
         "count_7d": 0,
+        "source": "static",
         "level": "standby"
       },
       {
         "name": "credential-query-reflex",
         "label": "憑證查詢提醒",
         "count_7d": 4,
+        "source": "static",
         "level": "medium"
       },
       {
         "name": "vault-ssh-block",
         "label": "攔截直接操作 vault SSH",
         "count_7d": 2,
+        "source": "static",
         "level": "medium"
       },
       {
         "name": "block-webfetch",
         "label": "WebFetch 改 defuddle",
         "count_7d": 3,
+        "source": "static",
         "level": "medium"
       },
       {
         "name": "rtk-rewrite",
         "label": "指令省 token 改寫",
         "count_7d": 0,
+        "source": "static",
         "level": "standby"
       }
     ]
