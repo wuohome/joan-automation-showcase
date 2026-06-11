@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-06-12 02:01",
+  "last_sync": "2026-06-12 03:01",
   "summary": {
     "systems_total": 18,
     "all_workers_online": true,
@@ -65,7 +65,7 @@
       {
         "name": "session-logger",
         "label": "對話紀錄存檔",
-        "count_7d": 63,
+        "count_7d": 61,
         "source": "live",
         "level": "active"
       },
