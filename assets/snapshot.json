@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-06-18 22:07",
+  "last_sync": "2026-06-18 23:07",
   "summary": {
     "systems_total": 18,
     "all_workers_online": true,
@@ -65,14 +65,14 @@
       {
         "name": "session-logger",
         "label": "對話紀錄存檔",
-        "count_7d": 15,
+        "count_7d": 12,
         "source": "live",
         "level": "active"
       },
       {
         "name": "monkey-detector",
         "label": "反 AI 退化偉測",
-        "count_7d": 6,
+        "count_7d": 5,
         "source": "live",
         "level": "active"
       },
