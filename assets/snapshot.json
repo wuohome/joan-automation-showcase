@@ -1,5 +1,5 @@
 {
-  "last_sync": "2026-07-12 13:11",
+  "last_sync": "2026-07-12 14:11",
   "summary": {
     "systems_total": 18,
     "all_workers_online": true,
@@ -72,8 +72,8 @@
       {
         "name": "monkey-detector",
         "label": "反 AI 退化偉測",
-        "count_7d": 0,
-        "source": "live",
+        "count_7d": 35,
+        "source": "static",
         "level": "active"
       },
       {
